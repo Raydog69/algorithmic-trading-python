@@ -146,51 +146,6 @@ def analyse(list):
         STOK(TechIndicator[stock], 4)
         TechIndicator[stock] = TechIndicator[stock].fillna(0)
 
-    def CMFlow(df, tf):
-        CHMF = []
-        MFMs = []
-        MFVs = []
-        x = tf
-        
-        while x < len(df['Date']):
-            PeriodVolume = 0
-            volRange = df['Volume'][x-tf:x]
-            for eachVol in volRange:
-                PeriodVolume += eachVol
-            
-            MFM = ((df['Close'][x] - df['Low'][x]) - (df['High'][x] - df['Close'][x])) / (df['High'][x] - df['Low'][x])
-            MFV = MFM*PeriodVolume
-            
-            MFMs.append(MFM)
-            MFVs.append(MFV)
-            x+=1
-        
-        y = tf
-        while y < len(MFVs):
-            PeriodVolume = 0
-            volRange = df['Volume'][x-tf:x]
-            for eachVol in volRange:
-                PeriodVolume += eachVol
-            consider = MFVs[y-tf:y]
-            tfsMFV = 0
-            
-            for eachMFV in consider:
-                tfsMFV += eachMFV
-            
-            tfsCMF = tfsMFV/PeriodVolume
-            CHMF.append(tfsCMF)
-            y+=1
-        return CHMF
-
-    for stock in range(len(TechIndicator)):
-        listofzeros = [0] * 40
-        CHMF = CMFlow(TechIndicator[stock], 20)
-        if len(CHMF)==0:
-            CHMF = [0] * TechIndicator[stock].shape[0]
-            TechIndicator[stock]['Chaikin_MF'] = CHMF
-        else:
-            TechIndicator[stock]['Chaikin_MF'] = listofzeros+CHMF
-
     def psar(df, iaf = 0.02, maxaf = 0.2):
         length = len(df)
         dates = (df['Date'])
@@ -578,10 +533,10 @@ class MLTrader(Strategy):
         df = handle_data(data)
         condition = 'neutral'
         today = self.get_datetime()
-        print("gayy", today, df['Date'])
+        # print("gayy", today, df['Date'])
         # Filter the DataFrame to select the row with today's date
         today_row = df[df['Date'].dt.date == today.date()]
-        print(df)
+        # print(df)
         if today_row is not None or []:
             # Get the prediction for today's data
             pred = trading_bot.predict(today_row.drop(columns=['Date', 'Label']))
@@ -591,7 +546,7 @@ class MLTrader(Strategy):
             elif pred[0] == 2:
                 condition = "negative" 
         else:
-            print("Gay", today_row, "HAH", df['Date'], today)
+            print("Gay") 
         return condition
 
     def on_trading_iteration(self):
