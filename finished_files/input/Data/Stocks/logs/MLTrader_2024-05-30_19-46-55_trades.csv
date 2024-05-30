@@ -1,0 +1,9 @@
+time,strategy,identifier,symbol,side,type,status,multiplier,time_in_force,asset.strike,asset.multiplier,asset.asset_type,price,filled_quantity,trade_cost
+2023-01-09 09:30:00-05:00,MLTrader,1c97df63e31f4f278a3a70bb6b4d4d4a,SPY,sell,market,new,1,gtc,0.0,1,stock,,,
+2023-01-09 09:30:00-05:00,MLTrader,1c97df63e31f4f278a3a70bb6b4d4d4a,SPY,sell,market,fill,1,gtc,0.0,1,stock,390.3699951171875,1281.0,0.0
+2023-01-10 09:30:00-05:00,MLTrader,d858275df6064e9b89a54234d1a63e2f,SPY,buy,stop,canceled,1,day,0.0,1,stock,,,
+2023-01-10 09:30:00-05:00,MLTrader,08ae6caf278d485a80ecaafc023f9c29,SPY,buy,limit,canceled,1,day,0.0,1,stock,,,
+2023-01-10 09:30:00-05:00,MLTrader,2f41294169864c4fa0461c332c31415b,SPY,buy,market,new,1,day,0.0,1,stock,,,
+2023-01-10 09:30:00-05:00,MLTrader,74dbd93b99f84914ac2c1bad80b06c5a,SPY,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-01-10 09:30:00-05:00,MLTrader,2f41294169864c4fa0461c332c31415b,SPY,buy,market,fill,1,day,0.0,1,stock,387.25,1281.0,0.0
+2023-01-10 09:30:00-05:00,MLTrader,74dbd93b99f84914ac2c1bad80b06c5a,SPY,buy,market,fill,1,gtc,0.0,1,stock,387.25,7748.0,0.0

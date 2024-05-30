@@ -1,0 +1,27 @@
+time,strategy,identifier,symbol,side,type,status,multiplier,time_in_force,asset.strike,asset.multiplier,asset.asset_type,price,filled_quantity,trade_cost
+2023-01-09 09:30:00-05:00,MLTrader,58e860523ff04ff7b675aa7a03c3898a,AAPL,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-01-09 09:30:00-05:00,MLTrader,58e860523ff04ff7b675aa7a03c3898a,AAPL,buy,market,fill,1,gtc,0.0,1,stock,130.47000122070312,383.0,0.0
+2023-01-10 09:30:00-05:00,MLTrader,3b3a3339faa2429dbb1dff4324f7f1fa,AAPL,sell,stop,canceled,1,day,0.0,1,stock,,,
+2023-01-10 09:30:00-05:00,MLTrader,519e9c140e434e67b8e39fe557e9f590,AAPL,sell,limit,canceled,1,day,0.0,1,stock,,,
+2023-01-10 09:30:00-05:00,MLTrader,3165d661e2dc437fab1a1c7f6075143b,AAPL,sell,market,new,1,day,0.0,1,stock,,,
+2023-01-10 09:30:00-05:00,MLTrader,3566933fb76646839c5dae4d701ba48c,AAPL,sell,market,new,1,gtc,0.0,1,stock,,,
+2023-01-10 09:30:00-05:00,MLTrader,3165d661e2dc437fab1a1c7f6075143b,AAPL,sell,market,fill,1,day,0.0,1,stock,130.25999450683594,383.0,0.0
+2023-01-10 09:30:00-05:00,MLTrader,3566933fb76646839c5dae4d701ba48c,AAPL,sell,market,fill,1,gtc,0.0,1,stock,130.25999450683594,192.0,0.0
+2023-01-11 09:30:00-05:00,MLTrader,ead82247874148f2a53a3d618988b415,AAPL,sell,market,new,1,gtc,0.0,1,stock,,,
+2023-01-11 09:30:00-05:00,MLTrader,ead82247874148f2a53a3d618988b415,AAPL,sell,market,fill,1,gtc,0.0,1,stock,131.25,476.0,0.0
+2023-01-12 09:30:00-05:00,MLTrader,13ea688ed6084591a9b08d1d8aedd215,AAPL,sell,market,new,1,gtc,0.0,1,stock,,,
+2023-01-12 09:30:00-05:00,MLTrader,13ea688ed6084591a9b08d1d8aedd215,AAPL,sell,market,fill,1,gtc,0.0,1,stock,133.8800048828125,700.0,0.0
+2023-01-13 09:30:00-05:00,MLTrader,cb0c835f0e394d268ca90ed012befe93,AAPL,sell,market,new,1,gtc,0.0,1,stock,,,
+2023-01-13 09:30:00-05:00,MLTrader,cb0c835f0e394d268ca90ed012befe93,AAPL,sell,market,fill,1,gtc,0.0,1,stock,132.02999877929688,1065.0,0.0
+2023-01-17 08:30:00-05:00,MLTrader,b1d74d2ccb164de9a14b5c497ec85cd3,AAPL,buy,limit,canceled,1,day,0.0,1,stock,,,
+2023-01-17 08:30:00-05:00,MLTrader,08d58e4c08fc45bb8fda7be41d34edf6,AAPL,buy,stop,fill,1,day,0.0,1,stock,136.77299423217775,192.0,0.0
+2023-01-17 09:30:00-05:00,MLTrader,c792618a787f464b9cc0200a59ff9f96,AAPL,buy,stop,canceled,1,day,0.0,1,stock,,,
+2023-01-17 09:30:00-05:00,MLTrader,2fde705a96954b58b779e1d1b14ac754,AAPL,buy,limit,canceled,1,day,0.0,1,stock,,,
+2023-01-17 09:30:00-05:00,MLTrader,1b78c554b7ca487ea1b614a69bbc54e5,AAPL,buy,stop,canceled,1,day,0.0,1,stock,,,
+2023-01-17 09:30:00-05:00,MLTrader,4bd82b5c2ff546f3b6b64362d2042b6f,AAPL,buy,limit,canceled,1,day,0.0,1,stock,,,
+2023-01-17 09:30:00-05:00,MLTrader,484b121345be4f2783b4fa98ee4410c5,AAPL,buy,stop,canceled,1,day,0.0,1,stock,,,
+2023-01-17 09:30:00-05:00,MLTrader,d4b3f83d71d54859b819208259ef850d,AAPL,buy,limit,canceled,1,day,0.0,1,stock,,,
+2023-01-17 09:30:00-05:00,MLTrader,9c45f0b0645f409e977c2781d484dcd4,AAPL,buy,market,new,1,day,0.0,1,stock,,,
+2023-01-17 09:30:00-05:00,MLTrader,2394b2ecc0294b2f97c71ed5ee7e2ead,AAPL,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-01-17 09:30:00-05:00,MLTrader,9c45f0b0645f409e977c2781d484dcd4,AAPL,buy,market,fill,1,day,0.0,1,stock,134.8300018310547,2241.0,0.0
+2023-01-17 09:30:00-05:00,MLTrader,2394b2ecc0294b2f97c71ed5ee7e2ead,AAPL,buy,market,fill,1,gtc,0.0,1,stock,134.8300018310547,1467.0,0.0
