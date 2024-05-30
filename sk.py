@@ -34,11 +34,11 @@ def load_images_and_extract_features(folder):
 x, y = load_images_and_extract_features('archive/Patterns')
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
-# model = DecisionTreeClassifier()
-# model.fit(x_train, y_train)
-# joblib.dump(model, 'music-recommender.joblib')
+model = DecisionTreeClassifier()
+model.fit(x_train, y_train)
+joblib.dump(model, 'music-recommender.joblib')
 
-model = joblib.load('music-recommender.joblib')
+# model = joblib.load('music-recommender.joblib')
 
 predictions = model.predict(x_test) 
 score = accuracy_score(y_test, predictions) # [1, 1, 1, 0, 0, 1, 0] = [1, 1, 1, 0, 0, 1, 0]
