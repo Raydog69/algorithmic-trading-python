@@ -1,0 +1,1512 @@
+2024-05-31 17:08:38,503: asyncio: INFO: [MLTrader] Executing the initialize lifecycle method
+2024-05-31 17:08:38,607: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:38,763: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:39,215: root: INFO: Current backtesting datetime 2023-05-11 10:00:00-04:00
+2024-05-31 17:08:39,218: root: INFO: Current backtesting datetime 2023-05-11 11:00:00-04:00
+2024-05-31 17:08:39,214: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:39,218: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 17:08:39,219: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,220: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,245: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:39,493: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:39,510: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:39,712: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,797: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:39,839: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:39,856: asyncio: WARNING: [MLTrader] Selling all positions for MLTrader strategy
+2024-05-31 17:08:39,857: asyncio: INFO: [MLTrader] [32mNew order was created: market order of | 2427.0 SPY buy | at price $420.1890124511719 of class bracket with status new[0m
+2024-05-31 17:08:39,859: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,859: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,860: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,860: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,862: root: INFO: market order of | 2427.0 SPY buy | at price $420.1890124511719 of class bracket with status new was sent to broker backtesting
+2024-05-31 17:08:39,862: root: INFO: market order of | 2427.0 SPY buy | at price $420.1890124511719 of class bracket with status new was sent to broker backtesting
+2024-05-31 17:08:39,862: asyncio: INFO: [MLTrader] [32mOrder was filled: market order of | 2427.0 SPY buy | at price $411.95 of class bracket with status fill[0m
+2024-05-31 17:08:39,865: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,866: root: INFO: Current backtesting datetime 2023-05-11 11:30:00-04:00
+2024-05-31 17:08:39,867: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,867: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,867: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,867: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,867: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,868: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,868: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,868: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,869: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,870: root: INFO: Current backtesting datetime 2023-05-11 12:00:00-04:00
+2024-05-31 17:08:39,871: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,871: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,871: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,871: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,871: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,871: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,872: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,872: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,873: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,874: root: INFO: Current backtesting datetime 2023-05-11 12:30:00-04:00
+2024-05-31 17:08:39,875: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,875: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,875: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,875: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,875: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,875: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,875: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,876: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,876: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,877: root: INFO: Current backtesting datetime 2023-05-11 13:00:00-04:00
+2024-05-31 17:08:39,878: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,878: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,878: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,878: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,879: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,879: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,879: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,879: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,880: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,881: root: INFO: Current backtesting datetime 2023-05-11 13:30:00-04:00
+2024-05-31 17:08:39,882: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,883: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,883: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,883: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,884: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,884: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,884: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,885: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,885: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,886: root: INFO: Current backtesting datetime 2023-05-11 14:00:00-04:00
+2024-05-31 17:08:39,888: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,888: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,889: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,889: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,889: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,889: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,889: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,890: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,890: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,891: root: INFO: Current backtesting datetime 2023-05-11 14:30:00-04:00
+2024-05-31 17:08:39,893: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,893: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,893: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,893: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,893: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,894: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,894: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,894: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,895: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,895: root: INFO: Current backtesting datetime 2023-05-11 15:00:00-04:00
+2024-05-31 17:08:39,896: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,896: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,896: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,896: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,897: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,897: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,897: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,898: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,899: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,899: root: INFO: Current backtesting datetime 2023-05-11 15:30:00-04:00
+2024-05-31 17:08:39,900: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,901: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,901: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,901: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,902: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,902: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,902: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,902: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,903: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,904: root: INFO: Current backtesting datetime 2023-05-11 16:00:00-04:00
+2024-05-31 17:08:39,905: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 17:08:39,905: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,905: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,905: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,905: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,905: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,907: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,907: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,907: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,908: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,908: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,908: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,908: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,909: root: INFO: Current backtesting datetime 2023-05-11 15:59:00-04:00
+2024-05-31 17:08:39,909: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 17:08:39,909: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,909: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,910: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,910: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,910: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,910: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,911: root: INFO: Current backtesting datetime 2023-05-11 16:00:00-04:00
+2024-05-31 17:08:39,911: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 17:08:39,911: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,911: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,911: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,911: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,911: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,912: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,912: root: INFO: Current backtesting datetime 2023-05-12 08:30:00-04:00
+2024-05-31 17:08:39,913: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,913: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,914: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 17:08:39,914: asyncio: INFO: [MLTrader] Getting historical prices for SPY, 1 bars, 
+2024-05-31 17:08:39,914: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,914: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 17:08:39,914: asyncio: INFO: [MLTrader] [32mOrder was canceled: limit order of | 2427.0 SPY sell | at price $420.1890124511719 with status canceled[0m
+2024-05-31 17:08:39,917: root: INFO: Position MLTrader Position: 0.0 shares of SPY (2 orders) liquidated
+2024-05-31 17:08:39,917: asyncio: INFO: [MLTrader] [32mOrder was filled: stop order of | 2427.0 SPY sell | at price $409.89 with status fill[0m
+2024-05-31 17:08:39,920: root: INFO: Current backtesting datetime 2023-05-12 09:30:00-04:00
+2024-05-31 17:08:39,920: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 17:08:39,921: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,921: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,921: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,922: root: INFO: Current backtesting datetime 2023-05-12 10:00:00-04:00
+2024-05-31 17:08:39,922: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,922: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,923: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,924: root: INFO: Current backtesting datetime 2023-05-12 10:30:00-04:00
+2024-05-31 17:08:39,924: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,924: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,924: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,926: root: INFO: Current backtesting datetime 2023-05-12 11:00:00-04:00
+2024-05-31 17:08:39,926: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,927: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,927: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,928: root: INFO: Current backtesting datetime 2023-05-12 11:30:00-04:00
+2024-05-31 17:08:39,928: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,928: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,929: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,929: root: INFO: Current backtesting datetime 2023-05-12 12:00:00-04:00
+2024-05-31 17:08:39,930: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,930: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,931: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,931: root: INFO: Current backtesting datetime 2023-05-12 12:30:00-04:00
+2024-05-31 17:08:39,932: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,932: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,933: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,935: root: INFO: Current backtesting datetime 2023-05-12 13:00:00-04:00
+2024-05-31 17:08:39,935: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,935: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,936: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,937: root: INFO: Current backtesting datetime 2023-05-12 13:30:00-04:00
+2024-05-31 17:08:39,937: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,938: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,938: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,939: root: INFO: Current backtesting datetime 2023-05-12 14:00:00-04:00
+2024-05-31 17:08:39,940: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,940: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,941: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,941: root: INFO: Current backtesting datetime 2023-05-12 14:30:00-04:00
+2024-05-31 17:08:39,942: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,942: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,943: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,943: root: INFO: Current backtesting datetime 2023-05-12 15:00:00-04:00
+2024-05-31 17:08:39,945: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,945: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,946: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,946: root: INFO: Current backtesting datetime 2023-05-12 15:30:00-04:00
+2024-05-31 17:08:39,947: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,947: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,948: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,949: root: INFO: Current backtesting datetime 2023-05-12 16:00:00-04:00
+2024-05-31 17:08:39,949: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 17:08:39,950: root: INFO: Current backtesting datetime 2023-05-12 15:59:00-04:00
+2024-05-31 17:08:39,951: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 17:08:39,951: root: INFO: Current backtesting datetime 2023-05-12 16:00:00-04:00
+2024-05-31 17:08:39,951: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 17:08:39,952: root: INFO: Current backtesting datetime 2023-05-15 08:30:00-04:00
+2024-05-31 17:08:39,952: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 17:08:39,953: root: INFO: Current backtesting datetime 2023-05-15 09:30:00-04:00
+2024-05-31 17:08:39,953: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 17:08:39,954: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,954: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,955: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,964: root: INFO: Current backtesting datetime 2023-05-15 10:00:00-04:00
+2024-05-31 17:08:39,974: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,974: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,976: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,976: root: INFO: Current backtesting datetime 2023-05-15 10:30:00-04:00
+2024-05-31 17:08:39,977: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,977: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,978: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,979: root: INFO: Current backtesting datetime 2023-05-15 11:00:00-04:00
+2024-05-31 17:08:39,979: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,980: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,981: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,981: root: INFO: Current backtesting datetime 2023-05-15 11:30:00-04:00
+2024-05-31 17:08:39,982: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,982: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,983: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,983: root: INFO: Current backtesting datetime 2023-05-15 12:00:00-04:00
+2024-05-31 17:08:39,984: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,984: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,984: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,985: root: INFO: Current backtesting datetime 2023-05-15 12:30:00-04:00
+2024-05-31 17:08:39,986: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,987: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,987: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,988: root: INFO: Current backtesting datetime 2023-05-15 13:00:00-04:00
+2024-05-31 17:08:39,988: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,989: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,989: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,990: root: INFO: Current backtesting datetime 2023-05-15 13:30:00-04:00
+2024-05-31 17:08:39,990: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,991: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,991: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,992: root: INFO: Current backtesting datetime 2023-05-15 14:00:00-04:00
+2024-05-31 17:08:39,992: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,992: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,993: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,994: root: INFO: Current backtesting datetime 2023-05-15 14:30:00-04:00
+2024-05-31 17:08:39,995: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,995: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,995: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,996: root: INFO: Current backtesting datetime 2023-05-15 15:00:00-04:00
+2024-05-31 17:08:39,997: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,997: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,998: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:39,998: root: INFO: Current backtesting datetime 2023-05-15 15:30:00-04:00
+2024-05-31 17:08:39,999: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,999: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:39[0m
+2024-05-31 17:08:39,999: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,001: root: INFO: Current backtesting datetime 2023-05-15 16:00:00-04:00
+2024-05-31 17:08:40,001: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 17:08:40,003: root: INFO: Current backtesting datetime 2023-05-15 15:59:00-04:00
+2024-05-31 17:08:40,003: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 17:08:40,004: root: INFO: Current backtesting datetime 2023-05-15 16:00:00-04:00
+2024-05-31 17:08:40,004: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 17:08:40,004: root: INFO: Current backtesting datetime 2023-05-16 08:30:00-04:00
+2024-05-31 17:08:40,005: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 17:08:40,005: root: INFO: Current backtesting datetime 2023-05-16 09:30:00-04:00
+2024-05-31 17:08:40,005: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 17:08:40,006: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,006: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,006: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,007: root: INFO: Current backtesting datetime 2023-05-16 10:00:00-04:00
+2024-05-31 17:08:40,007: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,007: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,008: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,008: root: INFO: Current backtesting datetime 2023-05-16 10:30:00-04:00
+2024-05-31 17:08:40,009: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,009: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,010: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,010: root: INFO: Current backtesting datetime 2023-05-16 11:00:00-04:00
+2024-05-31 17:08:40,010: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,012: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,012: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,013: root: INFO: Current backtesting datetime 2023-05-16 11:30:00-04:00
+2024-05-31 17:08:40,014: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,014: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,015: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,016: root: INFO: Current backtesting datetime 2023-05-16 12:00:00-04:00
+2024-05-31 17:08:40,016: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,016: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,017: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,018: root: INFO: Current backtesting datetime 2023-05-16 12:30:00-04:00
+2024-05-31 17:08:40,018: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,018: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,019: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,019: root: INFO: Current backtesting datetime 2023-05-16 13:00:00-04:00
+2024-05-31 17:08:40,020: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,020: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,021: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,022: root: INFO: Current backtesting datetime 2023-05-16 13:30:00-04:00
+2024-05-31 17:08:40,022: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,022: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,023: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,024: root: INFO: Current backtesting datetime 2023-05-16 14:00:00-04:00
+2024-05-31 17:08:40,024: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,024: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,025: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,026: root: INFO: Current backtesting datetime 2023-05-16 14:30:00-04:00
+2024-05-31 17:08:40,026: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,026: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,027: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,028: root: INFO: Current backtesting datetime 2023-05-16 15:00:00-04:00
+2024-05-31 17:08:40,028: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,028: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,029: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,030: root: INFO: Current backtesting datetime 2023-05-16 15:30:00-04:00
+2024-05-31 17:08:40,030: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,030: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,031: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,031: root: INFO: Current backtesting datetime 2023-05-16 16:00:00-04:00
+2024-05-31 17:08:40,032: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 17:08:40,033: root: INFO: Current backtesting datetime 2023-05-16 15:59:00-04:00
+2024-05-31 17:08:40,033: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 17:08:40,034: root: INFO: Current backtesting datetime 2023-05-16 16:00:00-04:00
+2024-05-31 17:08:40,034: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 17:08:40,034: root: INFO: Current backtesting datetime 2023-05-17 08:30:00-04:00
+2024-05-31 17:08:40,034: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 17:08:40,036: root: INFO: Current backtesting datetime 2023-05-17 09:30:00-04:00
+2024-05-31 17:08:40,036: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 17:08:40,037: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,037: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,038: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,038: root: INFO: Current backtesting datetime 2023-05-17 10:00:00-04:00
+2024-05-31 17:08:40,038: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,038: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,039: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,039: root: INFO: Current backtesting datetime 2023-05-17 10:30:00-04:00
+2024-05-31 17:08:40,040: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,041: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,041: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,042: root: INFO: Current backtesting datetime 2023-05-17 11:00:00-04:00
+2024-05-31 17:08:40,042: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,043: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,043: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,044: root: INFO: Current backtesting datetime 2023-05-17 11:30:00-04:00
+2024-05-31 17:08:40,044: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,044: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,044: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,046: root: INFO: Current backtesting datetime 2023-05-17 12:00:00-04:00
+2024-05-31 17:08:40,046: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,047: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,047: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,047: root: INFO: Current backtesting datetime 2023-05-17 12:30:00-04:00
+2024-05-31 17:08:40,048: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,048: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,049: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,049: root: INFO: Current backtesting datetime 2023-05-17 13:00:00-04:00
+2024-05-31 17:08:40,050: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,050: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,050: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,051: root: INFO: Current backtesting datetime 2023-05-17 13:30:00-04:00
+2024-05-31 17:08:40,051: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,052: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,052: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,053: root: INFO: Current backtesting datetime 2023-05-17 14:00:00-04:00
+2024-05-31 17:08:40,053: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,053: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,054: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,054: root: INFO: Current backtesting datetime 2023-05-17 14:30:00-04:00
+2024-05-31 17:08:40,054: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,056: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,057: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,057: root: INFO: Current backtesting datetime 2023-05-17 15:00:00-04:00
+2024-05-31 17:08:40,058: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,058: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,059: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,059: root: INFO: Current backtesting datetime 2023-05-17 15:30:00-04:00
+2024-05-31 17:08:40,059: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,060: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,060: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,061: root: INFO: Current backtesting datetime 2023-05-17 16:00:00-04:00
+2024-05-31 17:08:40,061: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 17:08:40,063: root: INFO: Current backtesting datetime 2023-05-17 15:59:00-04:00
+2024-05-31 17:08:40,063: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 17:08:40,064: root: INFO: Current backtesting datetime 2023-05-17 16:00:00-04:00
+2024-05-31 17:08:40,064: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 17:08:40,064: root: INFO: Current backtesting datetime 2023-05-18 08:30:00-04:00
+2024-05-31 17:08:40,065: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 17:08:40,065: root: INFO: Current backtesting datetime 2023-05-18 09:30:00-04:00
+2024-05-31 17:08:40,065: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 17:08:40,066: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,067: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,068: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,069: root: INFO: Current backtesting datetime 2023-05-18 10:00:00-04:00
+2024-05-31 17:08:40,070: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,070: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,071: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,072: root: INFO: Current backtesting datetime 2023-05-18 10:30:00-04:00
+2024-05-31 17:08:40,073: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,073: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,073: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,074: root: INFO: Current backtesting datetime 2023-05-18 11:00:00-04:00
+2024-05-31 17:08:40,075: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,075: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,076: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,077: root: INFO: Current backtesting datetime 2023-05-18 11:30:00-04:00
+2024-05-31 17:08:40,078: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,078: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,079: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,079: root: INFO: Current backtesting datetime 2023-05-18 12:00:00-04:00
+2024-05-31 17:08:40,080: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,080: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,080: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,081: root: INFO: Current backtesting datetime 2023-05-18 12:30:00-04:00
+2024-05-31 17:08:40,081: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,081: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,082: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,083: root: INFO: Current backtesting datetime 2023-05-18 13:00:00-04:00
+2024-05-31 17:08:40,083: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,084: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,084: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,085: root: INFO: Current backtesting datetime 2023-05-18 13:30:00-04:00
+2024-05-31 17:08:40,085: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,086: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,086: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,087: root: INFO: Current backtesting datetime 2023-05-18 14:00:00-04:00
+2024-05-31 17:08:40,088: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,088: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,088: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,091: root: INFO: Current backtesting datetime 2023-05-18 14:30:00-04:00
+2024-05-31 17:08:40,091: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,092: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,093: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,095: root: INFO: Current backtesting datetime 2023-05-18 15:00:00-04:00
+2024-05-31 17:08:40,090: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:40,095: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,096: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,096: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,097: root: INFO: Current backtesting datetime 2023-05-18 15:30:00-04:00
+2024-05-31 17:08:40,097: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,098: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,099: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,099: root: INFO: Current backtesting datetime 2023-05-18 16:00:00-04:00
+2024-05-31 17:08:40,100: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 17:08:40,101: root: INFO: Current backtesting datetime 2023-05-18 15:59:00-04:00
+2024-05-31 17:08:40,101: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 17:08:40,102: root: INFO: Current backtesting datetime 2023-05-18 16:00:00-04:00
+2024-05-31 17:08:40,102: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 17:08:40,102: root: INFO: Current backtesting datetime 2023-05-19 08:30:00-04:00
+2024-05-31 17:08:40,103: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 17:08:40,104: root: INFO: Current backtesting datetime 2023-05-19 09:30:00-04:00
+2024-05-31 17:08:40,104: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 17:08:40,104: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,106: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,106: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,107: root: INFO: Current backtesting datetime 2023-05-19 10:00:00-04:00
+2024-05-31 17:08:40,107: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,108: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,108: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,109: root: INFO: Current backtesting datetime 2023-05-19 10:30:00-04:00
+2024-05-31 17:08:40,109: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,109: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,110: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,110: root: INFO: Current backtesting datetime 2023-05-19 11:00:00-04:00
+2024-05-31 17:08:40,110: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,112: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,112: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,113: root: INFO: Current backtesting datetime 2023-05-19 11:30:00-04:00
+2024-05-31 17:08:40,113: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,114: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,114: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,115: root: INFO: Current backtesting datetime 2023-05-19 12:00:00-04:00
+2024-05-31 17:08:40,115: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,115: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,116: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,116: root: INFO: Current backtesting datetime 2023-05-19 12:30:00-04:00
+2024-05-31 17:08:40,116: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,117: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,118: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,118: root: INFO: Current backtesting datetime 2023-05-19 13:00:00-04:00
+2024-05-31 17:08:40,119: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:40,119: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,119: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,121: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,122: root: INFO: Current backtesting datetime 2023-05-19 13:30:00-04:00
+2024-05-31 17:08:40,122: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,122: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,123: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,123: root: INFO: Current backtesting datetime 2023-05-19 14:00:00-04:00
+2024-05-31 17:08:40,124: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,124: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,125: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,125: root: INFO: Current backtesting datetime 2023-05-19 14:30:00-04:00
+2024-05-31 17:08:40,126: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,126: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,127: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,127: root: INFO: Current backtesting datetime 2023-05-19 15:00:00-04:00
+2024-05-31 17:08:40,128: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,128: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,128: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,129: root: INFO: Current backtesting datetime 2023-05-19 15:30:00-04:00
+2024-05-31 17:08:40,129: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,130: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,130: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,131: root: INFO: Current backtesting datetime 2023-05-19 16:00:00-04:00
+2024-05-31 17:08:40,131: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 17:08:40,132: root: INFO: Current backtesting datetime 2023-05-19 15:59:00-04:00
+2024-05-31 17:08:40,133: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 17:08:40,133: root: INFO: Current backtesting datetime 2023-05-19 16:00:00-04:00
+2024-05-31 17:08:40,133: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 17:08:40,134: root: INFO: Current backtesting datetime 2023-05-22 08:30:00-04:00
+2024-05-31 17:08:40,134: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 17:08:40,134: root: INFO: Current backtesting datetime 2023-05-22 09:30:00-04:00
+2024-05-31 17:08:40,136: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 17:08:40,136: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,137: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,137: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,138: root: INFO: Current backtesting datetime 2023-05-22 10:00:00-04:00
+2024-05-31 17:08:40,139: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,139: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,140: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,140: root: INFO: Current backtesting datetime 2023-05-22 10:30:00-04:00
+2024-05-31 17:08:40,141: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,141: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,141: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,142: root: INFO: Current backtesting datetime 2023-05-22 11:00:00-04:00
+2024-05-31 17:08:40,142: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,143: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,143: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,144: root: INFO: Current backtesting datetime 2023-05-22 11:30:00-04:00
+2024-05-31 17:08:40,144: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,144: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,146: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,147: root: INFO: Current backtesting datetime 2023-05-22 12:00:00-04:00
+2024-05-31 17:08:40,148: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,148: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,149: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,149: root: INFO: Current backtesting datetime 2023-05-22 12:30:00-04:00
+2024-05-31 17:08:40,150: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,150: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,151: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,151: root: INFO: Current backtesting datetime 2023-05-22 13:00:00-04:00
+2024-05-31 17:08:40,152: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,152: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,152: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,153: root: INFO: Current backtesting datetime 2023-05-22 13:30:00-04:00
+2024-05-31 17:08:40,153: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,153: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,154: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,154: root: INFO: Current backtesting datetime 2023-05-22 14:00:00-04:00
+2024-05-31 17:08:40,154: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,154: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,156: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,157: root: INFO: Current backtesting datetime 2023-05-22 14:30:00-04:00
+2024-05-31 17:08:40,157: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,157: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,158: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,158: root: INFO: Current backtesting datetime 2023-05-22 15:00:00-04:00
+2024-05-31 17:08:40,159: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,159: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,160: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,160: root: INFO: Current backtesting datetime 2023-05-22 15:30:00-04:00
+2024-05-31 17:08:40,161: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,161: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,161: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,162: root: INFO: Current backtesting datetime 2023-05-22 16:00:00-04:00
+2024-05-31 17:08:40,162: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 17:08:40,163: root: INFO: Current backtesting datetime 2023-05-22 15:59:00-04:00
+2024-05-31 17:08:40,163: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 17:08:40,164: root: INFO: Current backtesting datetime 2023-05-22 16:00:00-04:00
+2024-05-31 17:08:40,164: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 17:08:40,164: root: INFO: Current backtesting datetime 2023-05-23 08:30:00-04:00
+2024-05-31 17:08:40,164: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 17:08:40,166: root: INFO: Current backtesting datetime 2023-05-23 09:30:00-04:00
+2024-05-31 17:08:40,166: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 17:08:40,167: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,168: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,168: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,169: root: INFO: Current backtesting datetime 2023-05-23 10:00:00-04:00
+2024-05-31 17:08:40,169: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,170: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,170: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,171: root: INFO: Current backtesting datetime 2023-05-23 10:30:00-04:00
+2024-05-31 17:08:40,172: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,172: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,172: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,173: root: INFO: Current backtesting datetime 2023-05-23 11:00:00-04:00
+2024-05-31 17:08:40,173: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,173: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,174: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,174: root: INFO: Current backtesting datetime 2023-05-23 11:30:00-04:00
+2024-05-31 17:08:40,176: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,176: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,177: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,177: root: INFO: Current backtesting datetime 2023-05-23 12:00:00-04:00
+2024-05-31 17:08:40,178: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,178: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,178: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,179: root: INFO: Current backtesting datetime 2023-05-23 12:30:00-04:00
+2024-05-31 17:08:40,180: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,180: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,181: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,182: root: INFO: Current backtesting datetime 2023-05-23 13:00:00-04:00
+2024-05-31 17:08:40,182: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,182: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,182: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,183: root: INFO: Current backtesting datetime 2023-05-23 13:30:00-04:00
+2024-05-31 17:08:40,183: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,184: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,184: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,184: root: INFO: Current backtesting datetime 2023-05-23 14:00:00-04:00
+2024-05-31 17:08:40,186: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,186: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,187: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,187: root: INFO: Current backtesting datetime 2023-05-23 14:30:00-04:00
+2024-05-31 17:08:40,188: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,188: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,189: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,190: root: INFO: Current backtesting datetime 2023-05-23 15:00:00-04:00
+2024-05-31 17:08:40,190: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,191: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,191: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,192: root: INFO: Current backtesting datetime 2023-05-23 15:30:00-04:00
+2024-05-31 17:08:40,192: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,192: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,193: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,194: root: INFO: Current backtesting datetime 2023-05-23 16:00:00-04:00
+2024-05-31 17:08:40,194: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 17:08:40,195: root: INFO: Current backtesting datetime 2023-05-23 15:59:00-04:00
+2024-05-31 17:08:40,195: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 17:08:40,197: root: INFO: Current backtesting datetime 2023-05-23 16:00:00-04:00
+2024-05-31 17:08:40,197: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 17:08:40,198: root: INFO: Current backtesting datetime 2023-05-24 08:30:00-04:00
+2024-05-31 17:08:40,198: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 17:08:40,199: root: INFO: Current backtesting datetime 2023-05-24 09:30:00-04:00
+2024-05-31 17:08:40,199: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 17:08:40,199: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,200: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,200: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,201: root: INFO: Current backtesting datetime 2023-05-24 10:00:00-04:00
+2024-05-31 17:08:40,201: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,202: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,202: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,203: root: INFO: Current backtesting datetime 2023-05-24 10:30:00-04:00
+2024-05-31 17:08:40,203: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,203: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,204: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,204: root: INFO: Current backtesting datetime 2023-05-24 11:00:00-04:00
+2024-05-31 17:08:40,205: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,205: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,206: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,207: root: INFO: Current backtesting datetime 2023-05-24 11:30:00-04:00
+2024-05-31 17:08:40,207: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,208: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,208: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,209: root: INFO: Current backtesting datetime 2023-05-24 12:00:00-04:00
+2024-05-31 17:08:40,209: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,210: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,210: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,211: root: INFO: Current backtesting datetime 2023-05-24 12:30:00-04:00
+2024-05-31 17:08:40,211: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,211: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,211: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,212: root: INFO: Current backtesting datetime 2023-05-24 13:00:00-04:00
+2024-05-31 17:08:40,213: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,213: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,213: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,215: root: INFO: Current backtesting datetime 2023-05-24 13:30:00-04:00
+2024-05-31 17:08:40,215: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,215: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,216: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,216: root: INFO: Current backtesting datetime 2023-05-24 14:00:00-04:00
+2024-05-31 17:08:40,217: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,217: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,218: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,218: root: INFO: Current backtesting datetime 2023-05-24 14:30:00-04:00
+2024-05-31 17:08:40,219: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,219: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,220: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,221: root: INFO: Current backtesting datetime 2023-05-24 15:00:00-04:00
+2024-05-31 17:08:40,221: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,221: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,222: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,223: root: INFO: Current backtesting datetime 2023-05-24 15:30:00-04:00
+2024-05-31 17:08:40,223: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,223: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,225: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,225: root: INFO: Current backtesting datetime 2023-05-24 16:00:00-04:00
+2024-05-31 17:08:40,225: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 17:08:40,226: root: INFO: Current backtesting datetime 2023-05-24 15:59:00-04:00
+2024-05-31 17:08:40,227: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 17:08:40,228: root: INFO: Current backtesting datetime 2023-05-24 16:00:00-04:00
+2024-05-31 17:08:40,228: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 17:08:40,229: root: INFO: Current backtesting datetime 2023-05-25 08:30:00-04:00
+2024-05-31 17:08:40,229: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 17:08:40,230: root: INFO: Current backtesting datetime 2023-05-25 09:30:00-04:00
+2024-05-31 17:08:40,230: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 17:08:40,231: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,231: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,232: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,232: root: INFO: Current backtesting datetime 2023-05-25 10:00:00-04:00
+2024-05-31 17:08:40,233: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,233: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,253: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,254: root: INFO: Current backtesting datetime 2023-05-25 10:30:00-04:00
+2024-05-31 17:08:40,254: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,254: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,256: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,257: root: INFO: Current backtesting datetime 2023-05-25 11:00:00-04:00
+2024-05-31 17:08:40,258: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,258: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,258: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,259: root: INFO: Current backtesting datetime 2023-05-25 11:30:00-04:00
+2024-05-31 17:08:40,260: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,261: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,261: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,262: root: INFO: Current backtesting datetime 2023-05-25 12:00:00-04:00
+2024-05-31 17:08:40,263: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,263: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,264: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,265: root: INFO: Current backtesting datetime 2023-05-25 12:30:00-04:00
+2024-05-31 17:08:40,265: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,266: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,266: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,266: root: INFO: Current backtesting datetime 2023-05-25 13:00:00-04:00
+2024-05-31 17:08:40,267: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,267: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,268: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,268: root: INFO: Current backtesting datetime 2023-05-25 13:30:00-04:00
+2024-05-31 17:08:40,268: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,269: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,269: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,270: root: INFO: Current backtesting datetime 2023-05-25 14:00:00-04:00
+2024-05-31 17:08:40,271: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,271: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,272: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,272: root: INFO: Current backtesting datetime 2023-05-25 14:30:00-04:00
+2024-05-31 17:08:40,273: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,273: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,274: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,274: root: INFO: Current backtesting datetime 2023-05-25 15:00:00-04:00
+2024-05-31 17:08:40,274: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,276: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,276: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,277: root: INFO: Current backtesting datetime 2023-05-25 15:30:00-04:00
+2024-05-31 17:08:40,277: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,278: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,279: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,279: root: INFO: Current backtesting datetime 2023-05-25 16:00:00-04:00
+2024-05-31 17:08:40,280: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 17:08:40,281: root: INFO: Current backtesting datetime 2023-05-25 15:59:00-04:00
+2024-05-31 17:08:40,281: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 17:08:40,282: root: INFO: Current backtesting datetime 2023-05-25 16:00:00-04:00
+2024-05-31 17:08:40,282: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 17:08:40,282: root: INFO: Current backtesting datetime 2023-05-26 08:30:00-04:00
+2024-05-31 17:08:40,283: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 17:08:40,283: root: INFO: Current backtesting datetime 2023-05-26 09:30:00-04:00
+2024-05-31 17:08:40,283: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 17:08:40,284: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,285: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,285: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,286: root: INFO: Current backtesting datetime 2023-05-26 10:00:00-04:00
+2024-05-31 17:08:40,286: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,286: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,287: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,288: root: INFO: Current backtesting datetime 2023-05-26 10:30:00-04:00
+2024-05-31 17:08:40,288: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,288: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,289: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,289: root: INFO: Current backtesting datetime 2023-05-26 11:00:00-04:00
+2024-05-31 17:08:40,290: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,290: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,291: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,292: root: INFO: Current backtesting datetime 2023-05-26 11:30:00-04:00
+2024-05-31 17:08:40,293: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,293: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,293: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,294: root: INFO: Current backtesting datetime 2023-05-26 12:00:00-04:00
+2024-05-31 17:08:40,294: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,294: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,296: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,296: root: INFO: Current backtesting datetime 2023-05-26 12:30:00-04:00
+2024-05-31 17:08:40,297: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,297: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,298: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,299: root: INFO: Current backtesting datetime 2023-05-26 13:00:00-04:00
+2024-05-31 17:08:40,299: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,299: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,300: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,301: root: INFO: Current backtesting datetime 2023-05-26 13:30:00-04:00
+2024-05-31 17:08:40,301: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,301: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,302: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,302: root: INFO: Current backtesting datetime 2023-05-26 14:00:00-04:00
+2024-05-31 17:08:40,303: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,303: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,304: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,305: root: INFO: Current backtesting datetime 2023-05-26 14:30:00-04:00
+2024-05-31 17:08:40,305: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,306: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,306: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,306: root: INFO: Current backtesting datetime 2023-05-26 15:00:00-04:00
+2024-05-31 17:08:40,308: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,308: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,309: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,310: root: INFO: Current backtesting datetime 2023-05-26 15:30:00-04:00
+2024-05-31 17:08:40,310: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,310: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,311: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,312: root: INFO: Current backtesting datetime 2023-05-26 16:00:00-04:00
+2024-05-31 17:08:40,312: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 17:08:40,313: root: INFO: Current backtesting datetime 2023-05-26 15:59:00-04:00
+2024-05-31 17:08:40,314: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 17:08:40,314: root: INFO: Current backtesting datetime 2023-05-26 16:00:00-04:00
+2024-05-31 17:08:40,314: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 17:08:40,314: root: INFO: Current backtesting datetime 2023-05-30 08:30:00-04:00
+2024-05-31 17:08:40,316: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 17:08:40,317: root: INFO: Current backtesting datetime 2023-05-30 09:30:00-04:00
+2024-05-31 17:08:40,317: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 17:08:40,317: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,317: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 17:08:40[0m
+2024-05-31 17:08:40,318: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 17:08:40,318: root: INFO: Current backtesting datetime 2023-05-30 10:00:00-04:00
+2024-05-31 17:08:40,319: root: INFO: Current backtesting datetime 2023-05-30 15:59:00-04:00
+2024-05-31 17:08:40,320: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 17:08:40,320: root: INFO: Current backtesting datetime 2023-05-30 16:00:00-04:00
+2024-05-31 17:08:40,320: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 17:08:40,320: asyncio: INFO: [MLTrader] Executing the on_strategy_end lifecycle method
+2024-05-31 17:08:40,369: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:40,385: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:40,629: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:40,650: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:40,836: root: INFO: Backtesting finished
+2024-05-31 17:08:40,901: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:40,933: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:41,182: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:41,196: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:41,440: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:41,461: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:41,711: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:41,727: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:41,996: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:42,026: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:42,274: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:42,303: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:42,552: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:42,571: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:42,823: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:42,851: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:43,106: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:43,135: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:43,389: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:43,417: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:43,671: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:43,700: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:43,975: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:44,005: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:44,277: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:44,296: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:44,550: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 17:08:44,603: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 17:08:44,753: backtest_stats: INFO: Backtest took 0:00:06.250768 for a speed of 0.000
+2024-05-31 17:08:44,967: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)

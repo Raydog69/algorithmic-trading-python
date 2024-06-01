@@ -1,0 +1,23 @@
+time,strategy,identifier,symbol,side,type,status,multiplier,time_in_force,asset.strike,asset.multiplier,asset.asset_type,price,filled_quantity,trade_cost
+2023-01-30 10:00:00-05:00,MLTrader,5dc38002eb614528bf0a708318378111,SPY,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-01-30 10:00:00-05:00,MLTrader,5dc38002eb614528bf0a708318378111,SPY,buy,market,fill,1,gtc,0.0,1,stock,402.79998779296875,248.0,0.0
+2023-02-01 08:30:00-05:00,MLTrader,b2a668d431dd4fafad0a07f1a87bd608,SPY,sell,stop,canceled,1,day,0.0,1,stock,,,
+2023-02-01 08:30:00-05:00,MLTrader,b4cd555d1b384de7adaebe13ac541634,SPY,sell,limit,fill,1,day,0.0,1,stock,410.8559875488281,248.0,0.0
+2023-02-02 10:00:00-05:00,MLTrader,dec019c49c0c44a2aef5318f00c52712,SPY,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-02-02 10:00:00-05:00,MLTrader,dec019c49c0c44a2aef5318f00c52712,SPY,buy,market,fill,1,gtc,0.0,1,stock,414.8599853515625,246.0,0.0
+2023-02-06 08:30:00-05:00,MLTrader,ddf9884f5bd247b58e0bfce9170fdec6,SPY,sell,limit,canceled,1,day,0.0,1,stock,,,
+2023-02-06 08:30:00-05:00,MLTrader,cb9be21e1a414142b9c2e3e7f3e3a989,SPY,sell,stop,fill,1,day,0.0,1,stock,409.7900085449219,246.0,0.0
+2023-02-06 10:00:00-05:00,MLTrader,5a4184156e74471fb8daad5b5790a971,SPY,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-02-06 10:00:00-05:00,MLTrader,5a4184156e74471fb8daad5b5790a971,SPY,buy,market,fill,1,gtc,0.0,1,stock,409.7900085449219,246.0,0.0
+2023-02-10 08:30:00-05:00,MLTrader,ec1d09586c7f47fab39be811279f9857,SPY,sell,limit,canceled,1,day,0.0,1,stock,,,
+2023-02-10 08:30:00-05:00,MLTrader,f17191cb0586431b9ce8febb82301141,SPY,sell,stop,fill,1,day,0.0,1,stock,405.69210845947265,246.0,0.0
+2023-02-21 10:00:00-05:00,MLTrader,03646e05ca654c5f967a0c15cdf81fa9,SPY,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-02-21 10:00:00-05:00,MLTrader,03646e05ca654c5f967a0c15cdf81fa9,SPY,buy,market,fill,1,gtc,0.0,1,stock,403.05999755859375,247.0,0.0
+2023-02-21 10:30:00-05:00,MLTrader,7a3d18723f3e46a1ae370a0d60d7fc48,SPY,sell,limit,canceled,1,day,0.0,1,stock,,,
+2023-02-21 10:30:00-05:00,MLTrader,36abbbc4c1a240c9bee4b3f36a7b7cd5,SPY,sell,stop,fill,1,day,0.0,1,stock,399.02939758300784,247.0,0.0
+2023-02-24 10:00:00-05:00,MLTrader,873a62b02c81428fb5d1120bddb13de5,SPY,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-02-24 10:00:00-05:00,MLTrader,873a62b02c81428fb5d1120bddb13de5,SPY,buy,market,fill,1,gtc,0.0,1,stock,395.4200134277344,250.0,0.0
+2023-03-03 08:30:00-05:00,MLTrader,2a1f53c74b404d879f68a7dd550f2757,SPY,sell,stop,canceled,1,day,0.0,1,stock,,,
+2023-03-03 08:30:00-05:00,MLTrader,27c4f25285f0412abb6d4dc8103c3810,SPY,sell,limit,fill,1,day,0.0,1,stock,403.3284136962891,250.0,0.0
+2023-03-06 10:00:00-05:00,MLTrader,819fe035af7c4f439c2496c6b1af1a35,SPY,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-03-06 10:00:00-05:00,MLTrader,819fe035af7c4f439c2496c6b1af1a35,SPY,buy,market,fill,1,gtc,0.0,1,stock,405.04998779296875,249.0,0.0

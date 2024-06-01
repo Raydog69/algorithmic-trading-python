@@ -1,0 +1,44 @@
+2024-05-31 14:08:15,642: asyncio: INFO: [MLTrader] Executing the initialize lifecycle method
+2024-05-31 14:08:15,710: alpaca.trading.stream: INFO: connected to: BaseURL.TRADING_STREAM_PAPER
+2024-05-31 14:08:16,353: root: INFO: Current backtesting datetime 2023-08-09 08:30:00-04:00
+2024-05-31 14:08:16,354: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 14:08:16,354: root: INFO: Current backtesting datetime 2023-08-09 09:30:00-04:00
+2024-05-31 14:08:16,354: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 14:08:16,357: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 14:08:16[0m
+2024-05-31 14:08:16,357: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 14:08:16,912: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 14:08:17,068: asyncio: ERROR: [MLTrader] 'datetime.datetime' object has no attribute 'floor'
+2024-05-31 14:08:17,070: asyncio: ERROR: [MLTrader] Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 923, in run
+    self._run_trading_session()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 871, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 262, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 286, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 397, in _on_trading_iteration
+    raise e
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\trygv\OneDrive\Dokumenter\IT1\algorithmic-trading-python\finance.py", line 554, in on_trading_iteration
+    sentiment = self.get_sentiment()
+                ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\trygv\OneDrive\Dokumenter\IT1\algorithmic-trading-python\finance.py", line 536, in get_sentiment
+    today = today.floor('s')
+            ^^^^^^^^^^^
+AttributeError: 'datetime.datetime' object has no attribute 'floor'
+
+2024-05-31 14:08:17,072: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-05-31 14:08:17,083: root: INFO: Backtesting finished
+2024-05-31 14:08:17,351: asyncio: WARNING: [MLTrader] Cannot plot returns because the strategy returns are missing
+2024-05-31 14:08:17,437: asyncio: WARNING: [MLTrader] Cannot create a tearsheet because the strategy returns are missing
+2024-05-31 14:08:17,438: backtest_stats: INFO: Backtest took 0:00:01.797752 for a speed of 0.000

@@ -1,0 +1,1466 @@
+2024-05-31 16:54:50,887: asyncio: INFO: [MLTrader] Executing the initialize lifecycle method
+2024-05-31 16:54:50,968: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:51,109: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:51,584: root: INFO: Current backtesting datetime 2023-05-11 10:00:00-04:00
+2024-05-31 16:54:51,586: root: INFO: Current backtesting datetime 2023-05-11 11:00:00-04:00
+2024-05-31 16:54:51,582: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:51,586: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 16:54:51,587: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:51[0m
+2024-05-31 16:54:51,588: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:51,606: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:51,853: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:51,872: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:52,107: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:52,192: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:52,231: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:52,252: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:52[0m
+2024-05-31 16:54:52,253: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:52,254: root: INFO: Current backtesting datetime 2023-05-11 11:30:00-04:00
+2024-05-31 16:54:52,254: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:52[0m
+2024-05-31 16:54:52,254: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:52,255: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:52,414: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:52[0m
+2024-05-31 16:54:52,416: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:52,417: root: INFO: Current backtesting datetime 2023-05-11 12:00:00-04:00
+2024-05-31 16:54:52,417: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:52[0m
+2024-05-31 16:54:52,418: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:52,419: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:52,512: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:52,548: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:52,576: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:52[0m
+2024-05-31 16:54:52,577: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:52,577: root: INFO: Current backtesting datetime 2023-05-11 12:30:00-04:00
+2024-05-31 16:54:52,578: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:52[0m
+2024-05-31 16:54:52,578: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:52,579: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:52,741: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:52[0m
+2024-05-31 16:54:52,742: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:52,743: root: INFO: Current backtesting datetime 2023-05-11 13:00:00-04:00
+2024-05-31 16:54:52,744: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:52[0m
+2024-05-31 16:54:52,744: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:52,745: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:52,833: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:52,888: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:52,889: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:52[0m
+2024-05-31 16:54:52,890: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:52,891: root: INFO: Current backtesting datetime 2023-05-11 13:30:00-04:00
+2024-05-31 16:54:52,892: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:52[0m
+2024-05-31 16:54:52,892: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:52,893: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:53,053: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:53[0m
+2024-05-31 16:54:53,054: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:53,054: root: INFO: Current backtesting datetime 2023-05-11 14:00:00-04:00
+2024-05-31 16:54:53,056: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:53[0m
+2024-05-31 16:54:53,056: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:53,057: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:53,164: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:53,198: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:53,201: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:53[0m
+2024-05-31 16:54:53,203: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:53,203: root: INFO: Current backtesting datetime 2023-05-11 14:30:00-04:00
+2024-05-31 16:54:53,205: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:53[0m
+2024-05-31 16:54:53,205: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:53,206: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:53,367: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:53[0m
+2024-05-31 16:54:53,368: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:53,369: root: INFO: Current backtesting datetime 2023-05-11 15:00:00-04:00
+2024-05-31 16:54:53,369: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:53[0m
+2024-05-31 16:54:53,370: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:53,372: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:53,483: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:53,524: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:53[0m
+2024-05-31 16:54:53,526: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:53,527: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:53,528: root: INFO: Current backtesting datetime 2023-05-11 15:30:00-04:00
+2024-05-31 16:54:53,528: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:53[0m
+2024-05-31 16:54:53,529: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:53,529: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:53,692: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:53[0m
+2024-05-31 16:54:53,693: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:53,694: root: INFO: Current backtesting datetime 2023-05-11 16:00:00-04:00
+2024-05-31 16:54:53,694: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 16:54:53,697: root: INFO: Current backtesting datetime 2023-05-11 15:59:00-04:00
+2024-05-31 16:54:53,697: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 16:54:53,698: root: INFO: Current backtesting datetime 2023-05-11 16:00:00-04:00
+2024-05-31 16:54:53,698: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 16:54:53,699: root: INFO: Current backtesting datetime 2023-05-12 08:30:00-04:00
+2024-05-31 16:54:53,699: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 16:54:53,700: root: INFO: Current backtesting datetime 2023-05-12 09:30:00-04:00
+2024-05-31 16:54:53,700: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 16:54:53,701: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:53[0m
+2024-05-31 16:54:53,701: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:53,701: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:53,806: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:53,848: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:53[0m
+2024-05-31 16:54:53,849: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:53,850: root: INFO: Current backtesting datetime 2023-05-12 10:00:00-04:00
+2024-05-31 16:54:53,850: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:53[0m
+2024-05-31 16:54:53,850: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:53,851: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:53,884: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:53,989: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:53[0m
+2024-05-31 16:54:53,990: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:53,991: root: INFO: Current backtesting datetime 2023-05-12 10:30:00-04:00
+2024-05-31 16:54:53,991: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:53[0m
+2024-05-31 16:54:53,991: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:53,993: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:54,153: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:54[0m
+2024-05-31 16:54:54,154: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:54,154: root: INFO: Current backtesting datetime 2023-05-12 11:00:00-04:00
+2024-05-31 16:54:54,154: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:54[0m
+2024-05-31 16:54:54,154: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:54,156: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:54,245: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:54,287: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:54,301: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:54[0m
+2024-05-31 16:54:54,303: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:54,304: root: INFO: Current backtesting datetime 2023-05-12 11:30:00-04:00
+2024-05-31 16:54:54,304: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:54[0m
+2024-05-31 16:54:54,305: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:54,305: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:54,463: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:54[0m
+2024-05-31 16:54:54,464: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:54,465: root: INFO: Current backtesting datetime 2023-05-12 12:00:00-04:00
+2024-05-31 16:54:54,465: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:54[0m
+2024-05-31 16:54:54,465: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:54,466: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:54,559: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:54,599: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:54,617: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:54[0m
+2024-05-31 16:54:54,618: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:54,619: root: INFO: Current backtesting datetime 2023-05-12 12:30:00-04:00
+2024-05-31 16:54:54,619: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:54[0m
+2024-05-31 16:54:54,619: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:54,620: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:54,779: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:54[0m
+2024-05-31 16:54:54,781: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:54,782: root: INFO: Current backtesting datetime 2023-05-12 13:00:00-04:00
+2024-05-31 16:54:54,782: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:54[0m
+2024-05-31 16:54:54,782: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:54,783: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:54,890: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:54,923: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:54[0m
+2024-05-31 16:54:54,924: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:54,924: root: INFO: Current backtesting datetime 2023-05-12 13:30:00-04:00
+2024-05-31 16:54:54,926: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:54,927: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:54[0m
+2024-05-31 16:54:54,927: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:54,928: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:55,069: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:55[0m
+2024-05-31 16:54:55,071: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:55,071: root: INFO: Current backtesting datetime 2023-05-12 14:00:00-04:00
+2024-05-31 16:54:55,072: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:55[0m
+2024-05-31 16:54:55,072: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:55,074: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:55,234: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:55[0m
+2024-05-31 16:54:55,235: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:55,236: root: INFO: Current backtesting datetime 2023-05-12 14:30:00-04:00
+2024-05-31 16:54:55,237: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:55[0m
+2024-05-31 16:54:55,237: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:55,238: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:55,335: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:55,376: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:55,390: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:55[0m
+2024-05-31 16:54:55,393: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:55,393: root: INFO: Current backtesting datetime 2023-05-12 15:00:00-04:00
+2024-05-31 16:54:55,394: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:55[0m
+2024-05-31 16:54:55,394: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:55,395: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:55,552: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:55[0m
+2024-05-31 16:54:55,553: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:55,554: root: INFO: Current backtesting datetime 2023-05-12 15:30:00-04:00
+2024-05-31 16:54:55,554: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:55[0m
+2024-05-31 16:54:55,554: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:55,556: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:55,661: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:55,688: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:55,705: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:55[0m
+2024-05-31 16:54:55,707: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:55,707: root: INFO: Current backtesting datetime 2023-05-12 16:00:00-04:00
+2024-05-31 16:54:55,708: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 16:54:55,709: root: INFO: Current backtesting datetime 2023-05-12 15:59:00-04:00
+2024-05-31 16:54:55,709: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 16:54:55,710: root: INFO: Current backtesting datetime 2023-05-12 16:00:00-04:00
+2024-05-31 16:54:55,710: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 16:54:55,711: root: INFO: Current backtesting datetime 2023-05-15 08:30:00-04:00
+2024-05-31 16:54:55,711: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 16:54:55,712: root: INFO: Current backtesting datetime 2023-05-15 09:30:00-04:00
+2024-05-31 16:54:55,712: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 16:54:55,712: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:55[0m
+2024-05-31 16:54:55,713: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:55,713: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:55,874: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:55[0m
+2024-05-31 16:54:55,875: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:55,876: root: INFO: Current backtesting datetime 2023-05-15 10:00:00-04:00
+2024-05-31 16:54:55,876: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:55[0m
+2024-05-31 16:54:55,877: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:55,877: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:55,992: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:56,027: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:56[0m
+2024-05-31 16:54:56,028: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:56,029: root: INFO: Current backtesting datetime 2023-05-15 10:30:00-04:00
+2024-05-31 16:54:56,029: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:56[0m
+2024-05-31 16:54:56,030: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:56,030: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:56,034: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:56,176: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:56[0m
+2024-05-31 16:54:56,177: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:56,177: root: INFO: Current backtesting datetime 2023-05-15 11:00:00-04:00
+2024-05-31 16:54:56,178: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:56[0m
+2024-05-31 16:54:56,178: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:56,179: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:56,342: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:56[0m
+2024-05-31 16:54:56,343: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:56,344: root: INFO: Current backtesting datetime 2023-05-15 11:30:00-04:00
+2024-05-31 16:54:56,344: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:56[0m
+2024-05-31 16:54:56,344: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:56,346: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:56,433: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:56,487: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:56,494: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:56[0m
+2024-05-31 16:54:56,496: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:56,496: root: INFO: Current backtesting datetime 2023-05-15 12:00:00-04:00
+2024-05-31 16:54:56,497: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:56[0m
+2024-05-31 16:54:56,497: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:56,498: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:56,662: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:56[0m
+2024-05-31 16:54:56,663: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:56,663: root: INFO: Current backtesting datetime 2023-05-15 12:30:00-04:00
+2024-05-31 16:54:56,664: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:56[0m
+2024-05-31 16:54:56,664: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:56,666: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:56,767: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:56,801: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:56,805: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:56[0m
+2024-05-31 16:54:56,807: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:56,808: root: INFO: Current backtesting datetime 2023-05-15 13:00:00-04:00
+2024-05-31 16:54:56,809: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:56[0m
+2024-05-31 16:54:56,809: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:56,810: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:56,964: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:56[0m
+2024-05-31 16:54:56,966: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:56,966: root: INFO: Current backtesting datetime 2023-05-15 13:30:00-04:00
+2024-05-31 16:54:56,967: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:56[0m
+2024-05-31 16:54:56,967: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:56,968: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:57,081: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:57,111: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:57[0m
+2024-05-31 16:54:57,112: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:57,113: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:57,113: root: INFO: Current backtesting datetime 2023-05-15 14:00:00-04:00
+2024-05-31 16:54:57,115: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:57[0m
+2024-05-31 16:54:57,115: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:57,116: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:57,276: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:57[0m
+2024-05-31 16:54:57,277: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:57,278: root: INFO: Current backtesting datetime 2023-05-15 14:30:00-04:00
+2024-05-31 16:54:57,278: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:57[0m
+2024-05-31 16:54:57,279: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:57,280: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:57,386: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:57,425: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:57[0m
+2024-05-31 16:54:57,426: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:57,426: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:57,428: root: INFO: Current backtesting datetime 2023-05-15 15:00:00-04:00
+2024-05-31 16:54:57,428: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:57[0m
+2024-05-31 16:54:57,429: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:57,429: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:57,591: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:57[0m
+2024-05-31 16:54:57,592: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:57,593: root: INFO: Current backtesting datetime 2023-05-15 15:30:00-04:00
+2024-05-31 16:54:57,593: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:57[0m
+2024-05-31 16:54:57,593: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:57,594: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:57,701: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:57,726: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:57,741: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:57[0m
+2024-05-31 16:54:57,742: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:57,742: root: INFO: Current backtesting datetime 2023-05-15 16:00:00-04:00
+2024-05-31 16:54:57,743: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 16:54:57,744: root: INFO: Current backtesting datetime 2023-05-15 15:59:00-04:00
+2024-05-31 16:54:57,744: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 16:54:57,746: root: INFO: Current backtesting datetime 2023-05-15 16:00:00-04:00
+2024-05-31 16:54:57,746: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 16:54:57,746: root: INFO: Current backtesting datetime 2023-05-16 08:30:00-04:00
+2024-05-31 16:54:57,747: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 16:54:57,747: root: INFO: Current backtesting datetime 2023-05-16 09:30:00-04:00
+2024-05-31 16:54:57,747: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 16:54:57,748: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:57[0m
+2024-05-31 16:54:57,748: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:57,748: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:57,902: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:57[0m
+2024-05-31 16:54:57,903: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:57,904: root: INFO: Current backtesting datetime 2023-05-16 10:00:00-04:00
+2024-05-31 16:54:57,904: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:57[0m
+2024-05-31 16:54:57,904: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:57,904: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:58,024: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:58,048: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:58[0m
+2024-05-31 16:54:58,049: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:58,050: root: INFO: Current backtesting datetime 2023-05-16 10:30:00-04:00
+2024-05-31 16:54:58,050: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:58[0m
+2024-05-31 16:54:58,051: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:58,051: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:58,052: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:58,210: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:58[0m
+2024-05-31 16:54:58,212: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:58,212: root: INFO: Current backtesting datetime 2023-05-16 11:00:00-04:00
+2024-05-31 16:54:58,213: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:58[0m
+2024-05-31 16:54:58,213: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:58,214: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:58,329: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:58,360: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:58[0m
+2024-05-31 16:54:58,361: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:58,362: root: INFO: Current backtesting datetime 2023-05-16 11:30:00-04:00
+2024-05-31 16:54:58,363: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:58[0m
+2024-05-31 16:54:58,363: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:58,364: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:58,443: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:58,504: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:58[0m
+2024-05-31 16:54:58,505: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:58,505: root: INFO: Current backtesting datetime 2023-05-16 12:00:00-04:00
+2024-05-31 16:54:58,505: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:58[0m
+2024-05-31 16:54:58,505: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:58,506: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:58,668: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:58[0m
+2024-05-31 16:54:58,669: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:58,670: root: INFO: Current backtesting datetime 2023-05-16 12:30:00-04:00
+2024-05-31 16:54:58,670: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:58[0m
+2024-05-31 16:54:58,670: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:58,671: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:58,759: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:58,811: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:58,816: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:58[0m
+2024-05-31 16:54:58,818: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:58,818: root: INFO: Current backtesting datetime 2023-05-16 13:00:00-04:00
+2024-05-31 16:54:58,819: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:58[0m
+2024-05-31 16:54:58,819: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:58,820: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:58,974: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:58[0m
+2024-05-31 16:54:58,975: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:58,976: root: INFO: Current backtesting datetime 2023-05-16 13:30:00-04:00
+2024-05-31 16:54:58,977: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:58[0m
+2024-05-31 16:54:58,977: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:58,978: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:59,087: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:59,114: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:59[0m
+2024-05-31 16:54:59,116: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:59,117: root: INFO: Current backtesting datetime 2023-05-16 14:00:00-04:00
+2024-05-31 16:54:59,117: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:59[0m
+2024-05-31 16:54:59,118: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:59,118: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:59,122: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:59,268: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:59[0m
+2024-05-31 16:54:59,270: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:59,270: root: INFO: Current backtesting datetime 2023-05-16 14:30:00-04:00
+2024-05-31 16:54:59,271: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:59[0m
+2024-05-31 16:54:59,271: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:59,271: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:59,431: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:59[0m
+2024-05-31 16:54:59,432: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:59,433: root: INFO: Current backtesting datetime 2023-05-16 15:00:00-04:00
+2024-05-31 16:54:59,434: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:59[0m
+2024-05-31 16:54:59,434: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:59,434: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:59,527: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:59,572: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:59,580: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:59[0m
+2024-05-31 16:54:59,581: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:59,582: root: INFO: Current backtesting datetime 2023-05-16 15:30:00-04:00
+2024-05-31 16:54:59,583: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:59[0m
+2024-05-31 16:54:59,583: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:59,584: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:59,739: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:59[0m
+2024-05-31 16:54:59,740: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:59,741: root: INFO: Current backtesting datetime 2023-05-16 16:00:00-04:00
+2024-05-31 16:54:59,741: asyncio: INFO: [MLTrader] [34mThe market is not currently open, skipping this trading iteration[0m
+2024-05-31 16:54:59,743: root: INFO: Current backtesting datetime 2023-05-16 15:59:00-04:00
+2024-05-31 16:54:59,743: asyncio: INFO: [MLTrader] Executing the before_market_closes lifecycle method
+2024-05-31 16:54:59,744: root: INFO: Current backtesting datetime 2023-05-16 16:00:00-04:00
+2024-05-31 16:54:59,744: asyncio: INFO: [MLTrader] Executing the after_market_closes lifecycle method
+2024-05-31 16:54:59,745: root: INFO: Current backtesting datetime 2023-05-17 08:30:00-04:00
+2024-05-31 16:54:59,746: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-05-31 16:54:59,746: root: INFO: Current backtesting datetime 2023-05-17 09:30:00-04:00
+2024-05-31 16:54:59,746: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-05-31 16:54:59,747: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:59[0m
+2024-05-31 16:54:59,747: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:59,748: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:59,855: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:54:59,891: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:54:59,894: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:54:59[0m
+2024-05-31 16:54:59,896: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:54:59,897: root: INFO: Current backtesting datetime 2023-05-17 10:00:00-04:00
+2024-05-31 16:54:59,897: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:54:59[0m
+2024-05-31 16:54:59,898: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:54:59,899: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:00,059: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:55:00[0m
+2024-05-31 16:55:00,060: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:55:00,061: root: INFO: Current backtesting datetime 2023-05-17 10:30:00-04:00
+2024-05-31 16:55:00,062: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:55:00[0m
+2024-05-31 16:55:00,062: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:00,062: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:00,175: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:55:00,204: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:55:00[0m
+2024-05-31 16:55:00,205: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:55:00,206: root: INFO: Current backtesting datetime 2023-05-17 11:00:00-04:00
+2024-05-31 16:55:00,207: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:55:00[0m
+2024-05-31 16:55:00,207: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:00,207: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:00,213: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:55:00,347: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:55:00[0m
+2024-05-31 16:55:00,348: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:55:00,348: root: INFO: Current backtesting datetime 2023-05-17 11:30:00-04:00
+2024-05-31 16:55:00,349: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:55:00[0m
+2024-05-31 16:55:00,349: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:00,350: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:00,516: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:55:00[0m
+2024-05-31 16:55:00,517: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:55:00,518: root: INFO: Current backtesting datetime 2023-05-17 12:00:00-04:00
+2024-05-31 16:55:00,518: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:55:00[0m
+2024-05-31 16:55:00,519: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:00,519: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:00,631: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:55:00,663: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:55:00,676: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:55:00[0m
+2024-05-31 16:55:00,677: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:55:00,678: root: INFO: Current backtesting datetime 2023-05-17 12:30:00-04:00
+2024-05-31 16:55:00,679: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:55:00[0m
+2024-05-31 16:55:00,679: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:00,680: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:00,852: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:55:00[0m
+2024-05-31 16:55:00,853: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:55:00,854: root: INFO: Current backtesting datetime 2023-05-17 13:00:00-04:00
+2024-05-31 16:55:00,854: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:55:00[0m
+2024-05-31 16:55:00,854: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:00,856: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:00,966: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:55:00,998: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:55:00[0m
+2024-05-31 16:55:00,999: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:55:01,001: root: INFO: Current backtesting datetime 2023-05-17 13:30:00-04:00
+2024-05-31 16:55:01,001: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:55:01[0m
+2024-05-31 16:55:01,001: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:01,002: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:01,063: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:55:01,141: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:55:01[0m
+2024-05-31 16:55:01,142: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:55:01,143: root: INFO: Current backtesting datetime 2023-05-17 14:00:00-04:00
+2024-05-31 16:55:01,144: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:55:01[0m
+2024-05-31 16:55:01,144: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:01,145: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:01,307: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-05-31 16:55:01[0m
+2024-05-31 16:55:01,308: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-05-31 16:55:01,308: root: INFO: Current backtesting datetime 2023-05-17 14:30:00-04:00
+2024-05-31 16:55:01,309: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-05-31 16:55:01[0m
+2024-05-31 16:55:01,309: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:01,311: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-05-31 16:55:01,398: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:55:01,451: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:55:01,456: asyncio: ERROR: [MLTrader] Found array with 0 sample(s) (shape=(0, 43)) while a minimum of 1 is required by DecisionTreeClassifier.
+2024-05-31 16:55:01,459: asyncio: ERROR: [MLTrader] Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 923, in run
+    self._run_trading_session()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 871, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 262, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 286, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 397, in _on_trading_iteration
+    raise e
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\trygv\OneDrive\Dokumenter\IT1\algorithmic-trading-python\finance.py", line 554, in on_trading_iteration
+    sentiment = self.get_sentiment()
+                ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\trygv\OneDrive\Dokumenter\IT1\algorithmic-trading-python\finance.py", line 542, in get_sentiment
+    pred = trading_bot.predict(today_row.drop(columns=['Date', 'Label']))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sklearn\tree\_classes.py", line 529, in predict
+    X = self._validate_X_predict(X, check_input)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sklearn\tree\_classes.py", line 489, in _validate_X_predict
+    X = self._validate_data(
+        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sklearn\base.py", line 633, in _validate_data
+    out = check_array(X, input_name="X", **check_params)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\sklearn\utils\validation.py", line 1082, in check_array
+    raise ValueError(
+ValueError: Found array with 0 sample(s) (shape=(0, 43)) while a minimum of 1 is required by DecisionTreeClassifier.
+
+2024-05-31 16:55:01,462: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-05-31 16:55:01,738: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:55:01,764: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:55:02,018: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:55:02,030: root: INFO: Backtesting finished
+2024-05-31 16:55:02,042: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:55:02,291: alpaca.trading.stream: ERROR: error during websocket communication: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 168, in _run_forever
+    await self._start_ws()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 128, in _start_ws
+    await self._connect()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\alpaca\trading\stream.py", line 59, in _connect
+    self._ws = await websockets.connect(self._endpoint, **self._websocket_params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 659, in __await_impl_timeout__
+    return await asyncio.wait_for(self.__await_impl__(), self.open_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\websockets\legacy\client.py", line 663, in __await_impl__
+    _transport, _protocol = await self._create_connection()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1149, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\base_events.py", line 1182, in _create_connection_transport
+    await waiter
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 578, in _on_handshake_complete
+    raise handshake_exc
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\asyncio\sslproto.py", line 560, in _do_handshake
+    self._sslobj.do_handshake()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1008.0_x64__qbz5n2kfra8p0\Lib\ssl.py", line 917, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)
+2024-05-31 16:55:02,305: root: INFO: There were no trades in this backtest.
+2024-05-31 16:55:02,323: alpaca.trading.stream: INFO: starting trading websocket connection
+2024-05-31 16:55:02,500: root: ERROR: Not enough data to create a tearsheet, at least 2 days of data are required. Skipping
+2024-05-31 16:55:02,501: backtest_stats: INFO: Backtest took 0:00:11.615314 for a speed of 0.000

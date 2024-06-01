@@ -1,0 +1,9 @@
+time,strategy,identifier,symbol,side,type,status,multiplier,time_in_force,asset.strike,asset.multiplier,asset.asset_type,price,filled_quantity,trade_cost
+2023-05-11 11:00:00-04:00,MLTrader,e0315b53913941018560b2d0ed0e117d,SPY,sell,market,new,1,gtc,0.0,1,stock,,,
+2023-05-11 11:00:00-04:00,MLTrader,e0315b53913941018560b2d0ed0e117d,SPY,sell,market,fill,1,gtc,0.0,1,stock,411.95001220703125,2427.0,0.0
+2023-05-19 08:30:00-04:00,MLTrader,b125e8d8e29e4f23974be730e751be46,SPY,buy,limit,canceled,1,day,0.0,1,stock,,,
+2023-05-19 08:30:00-04:00,MLTrader,bbb69c7fb082425ebb2dabe282fc9e23,SPY,buy,stop,fill,1,day,0.0,1,stock,420.1890124511719,2427.0,0.0
+2023-06-05 10:00:00-04:00,MLTrader,64d351cec8de41d99d9a0d190aedb693,SPY,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-06-05 10:00:00-04:00,MLTrader,64d351cec8de41d99d9a0d190aedb693,SPY,buy,market,fill,1,gtc,0.0,1,stock,428.2799987792969,1868.0,0.0
+2023-06-13 08:30:00-04:00,MLTrader,f111563b828d4e0281f3e68608fc9589,SPY,sell,stop,canceled,1,day,0.0,1,stock,,,
+2023-06-13 08:30:00-04:00,MLTrader,9768272800ea46f4acd98c9a6b6bcd67,SPY,sell,limit,fill,1,day,0.0,1,stock,436.8455987548828,1868.0,0.0

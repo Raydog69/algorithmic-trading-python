@@ -1,0 +1,52 @@
+2024-06-01 01:36:07,460: asyncio: INFO: [MLTrader] Executing the initialize lifecycle method
+2024-06-01 01:36:07,602: alpaca.trading.stream: INFO: connected to: BaseURL.TRADING_STREAM_PAPER
+2024-06-01 01:36:08,232: root: INFO: Current backtesting datetime 2023-05-30 08:30:00-04:00
+2024-06-01 01:36:08,232: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-06-01 01:36:08,233: root: INFO: Current backtesting datetime 2023-05-30 09:30:00-04:00
+2024-06-01 01:36:08,233: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-06-01 01:36:08,235: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-06-01 01:36:08[0m
+2024-06-01 01:36:08,235: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-06-01 01:36:08,718: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-06-01 01:36:08,719: asyncio: INFO: [MLTrader] [34mTrading iteration ended at 2024-06-01 01:36:08[0m
+2024-06-01 01:36:08,719: asyncio: INFO: [MLTrader] [34mSleeping for 1800 seconds[0m
+2024-06-01 01:36:08,720: root: INFO: Current backtesting datetime 2023-05-30 10:00:00-04:00
+2024-06-01 01:36:08,721: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-06-01 01:36:08[0m
+2024-06-01 01:36:08,721: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-06-01 01:36:08,722: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-06-01 01:36:08,722: asyncio: ERROR: [MLTrader] list indices must be integers or slices, not str
+2024-06-01 01:36:08,724: asyncio: ERROR: [MLTrader] Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 923, in run
+    self._run_trading_session()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 871, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 262, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 286, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 397, in _on_trading_iteration
+    raise e
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\trygv\OneDrive\Dokumenter\IT1\algorithmic-trading-python\finance.py", line 611, in on_trading_iteration
+    self.runnit(cash, last_price, quantity)
+  File "c:\Users\trygv\OneDrive\Dokumenter\IT1\algorithmic-trading-python\finance.py", line 571, in runnit
+    sentiment = self.get_sentiment()
+                ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\trygv\OneDrive\Dokumenter\IT1\algorithmic-trading-python\finance.py", line 557, in get_sentiment
+    today_row = df[df['Date'] == today]
+                   ~~^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+
+2024-06-01 01:36:08,726: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-06-01 01:36:09,077: root: INFO: Backtesting finished
+2024-06-01 01:36:09,337: root: INFO: There were no trades in this backtest.
+2024-06-01 01:36:09,509: root: ERROR: Not enough data to create a tearsheet, at least 2 days of data are required. Skipping
+2024-06-01 01:36:09,509: backtest_stats: INFO: Backtest took 0:00:02.050070 for a speed of 0.000

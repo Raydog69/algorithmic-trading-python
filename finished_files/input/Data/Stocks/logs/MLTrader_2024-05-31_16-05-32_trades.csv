@@ -1,0 +1,7 @@
+time,strategy,identifier,symbol,side,type,status,multiplier,time_in_force,asset.strike,asset.multiplier,asset.asset_type,price,filled_quantity,trade_cost
+2023-05-12 12:30:00-04:00,MLTrader,cd7d2c14fdfb43a9bd40ab2884bff871,AAPL,sell,market,new,1,gtc,0.0,1,stock,,,
+2023-05-12 12:30:00-04:00,MLTrader,cd7d2c14fdfb43a9bd40ab2884bff871,AAPL,sell,market,fill,1,gtc,0.0,1,stock,173.6199951171875,576.0,0.0
+2023-05-12 13:00:00-04:00,MLTrader,c123c3cba13e4b8097c61058ac82a6ef,AAPL,sell,market,new,1,gtc,0.0,1,stock,,,
+2023-05-12 13:00:00-04:00,MLTrader,c123c3cba13e4b8097c61058ac82a6ef,AAPL,sell,market,fill,1,gtc,0.0,1,stock,173.6199951171875,1152.0,0.0
+2023-05-12 13:30:00-04:00,MLTrader,e3bfcd5413db4c5181c839292d7d6119,AAPL,sell,market,new,1,gtc,0.0,1,stock,,,
+2023-05-12 13:30:00-04:00,MLTrader,e3bfcd5413db4c5181c839292d7d6119,AAPL,sell,market,fill,1,gtc,0.0,1,stock,173.6199951171875,2304.0,0.0

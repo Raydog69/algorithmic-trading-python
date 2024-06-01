@@ -1,0 +1,49 @@
+2024-06-01 00:25:00,749: asyncio: INFO: [MLTrader] Executing the initialize lifecycle method
+2024-06-01 00:25:00,910: alpaca.trading.stream: INFO: connected to: BaseURL.TRADING_STREAM_PAPER
+2024-06-01 00:25:01,551: root: INFO: Current backtesting datetime 2023-02-13 08:30:00-05:00
+2024-06-01 00:25:01,552: asyncio: INFO: [MLTrader] Executing the before_market_opens lifecycle method
+2024-06-01 00:25:01,553: root: INFO: Current backtesting datetime 2023-02-13 09:30:00-05:00
+2024-06-01 00:25:01,553: asyncio: INFO: [MLTrader] Executing the before_starting_trading lifecycle method
+2024-06-01 00:25:01,557: asyncio: INFO: [MLTrader] [34mExecuting the on_trading_iteration lifecycle method at 2024-06-01 00:25:01[0m
+2024-06-01 00:25:01,557: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-06-01 00:25:02,050: root: WARNING: quote is not implemented for YahooData, but USD was passed as the quote
+2024-06-01 00:25:02,051: asyncio: ERROR: [MLTrader] 'NoneType' object is not subscriptable
+2024-06-01 00:25:02,053: asyncio: ERROR: [MLTrader] Traceback (most recent call last):
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 923, in run
+    self._run_trading_session()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 871, in _run_trading_session
+    self._on_trading_iteration()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 262, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 286, in func_output
+    result = func_input(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 397, in _on_trading_iteration
+    raise e
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\strategies\strategy_executor.py", line 369, in _on_trading_iteration
+    on_trading_iteration()
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\tools\decorators.py", line 62, in func_output
+    frame, result = call_function_get_frame(func_input, *args, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\trygv\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\lumibot\tools\decorators.py", line 30, in call_function_get_frame
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\trygv\OneDrive\Dokumenter\IT1\algorithmic-trading-python\finance.py", line 607, in on_trading_iteration
+    self.runnit(cash, last_price, quantity)
+  File "c:\Users\trygv\OneDrive\Dokumenter\IT1\algorithmic-trading-python\finance.py", line 567, in runnit
+    sentiment = self.get_sentiment()
+                ^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\trygv\OneDrive\Dokumenter\IT1\algorithmic-trading-python\finance.py", line 548, in get_sentiment
+    df = handle_data(data)
+         ^^^^^^^^^^^^^^^^^
+  File "c:\Users\trygv\OneDrive\Dokumenter\IT1\algorithmic-trading-python\finance.py", line 502, in handle_data
+    results = data['results']
+              ~~~~^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+2024-06-01 00:25:02,054: asyncio: INFO: [MLTrader] Executing the on_bot_crash event method
+2024-06-01 00:25:02,062: root: INFO: Backtesting finished
+2024-06-01 00:25:02,415: asyncio: WARNING: [MLTrader] Cannot plot returns because the strategy returns are missing
+2024-06-01 00:25:02,486: asyncio: WARNING: [MLTrader] Cannot create a tearsheet because the strategy returns are missing
+2024-06-01 00:25:02,486: backtest_stats: INFO: Backtest took 0:00:01.738132 for a speed of 0.000

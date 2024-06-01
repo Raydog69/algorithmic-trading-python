@@ -1,0 +1,19 @@
+time,strategy,identifier,symbol,side,type,status,multiplier,time_in_force,asset.strike,asset.multiplier,asset.asset_type,price,filled_quantity,trade_cost
+2023-05-11 14:00:00-04:00,MLTrader,03871e9a2db34690805e9fdb1df9fe25,SPY,sell,market,new,1,gtc,0.0,1,stock,,,
+2023-05-11 14:00:00-04:00,MLTrader,03871e9a2db34690805e9fdb1df9fe25,SPY,sell,market,fill,1,gtc,0.0,1,stock,411.95001220703125,243.0,0.0
+2023-05-12 10:00:00-04:00,MLTrader,776fb056167549efa734203ac5313f00,SPY,buy,stop,canceled,1,day,0.0,1,stock,,,
+2023-05-12 10:00:00-04:00,MLTrader,0c5b599805944c4087a40032be65ab98,SPY,buy,limit,canceled,1,day,0.0,1,stock,,,
+2023-05-12 10:00:00-04:00,MLTrader,494f1798acd44e46b9ca5835f15afd4b,SPY,buy,market,new,1,day,0.0,1,stock,,,
+2023-05-12 10:00:00-04:00,MLTrader,c5f666f062ac47959bcfbe80928065b6,SPY,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-05-12 10:00:00-04:00,MLTrader,494f1798acd44e46b9ca5835f15afd4b,SPY,buy,market,fill,1,day,0.0,1,stock,413.4200134277344,243.0,0.0
+2023-05-12 10:00:00-04:00,MLTrader,c5f666f062ac47959bcfbe80928065b6,SPY,buy,market,fill,1,gtc,0.0,1,stock,413.4200134277344,484.0,0.0
+2023-05-12 10:30:00-04:00,MLTrader,4627a8a306674b9798ad2ef7ad9ec217,SPY,sell,limit,canceled,1,day,0.0,1,stock,,,
+2023-05-12 10:30:00-04:00,MLTrader,86507c791959478d865d5fc0ed01b846,SPY,sell,stop,fill,1,day,0.0,1,stock,409.285813293457,484.0,0.0
+2023-05-12 15:30:00-04:00,MLTrader,c1e78d170c354a6dbf88d3a8e250dde5,SPY,sell,market,new,1,gtc,0.0,1,stock,,,
+2023-05-12 15:30:00-04:00,MLTrader,c1e78d170c354a6dbf88d3a8e250dde5,SPY,sell,market,fill,1,gtc,0.0,1,stock,413.4200134277344,236.0,0.0
+2023-05-15 10:00:00-04:00,MLTrader,3a95a660c5a74794a4acd693a2e9cb69,SPY,buy,stop,canceled,1,day,0.0,1,stock,,,
+2023-05-15 10:00:00-04:00,MLTrader,914f3fc937df48c28fd1a5a6160d14f4,SPY,buy,limit,canceled,1,day,0.0,1,stock,,,
+2023-05-15 10:00:00-04:00,MLTrader,4d123200cc43438c8f21e635ec7c1761,SPY,buy,market,new,1,day,0.0,1,stock,,,
+2023-05-15 10:00:00-04:00,MLTrader,86f34f680373419bae9f881e4eb38fa4,SPY,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-05-15 10:00:00-04:00,MLTrader,4d123200cc43438c8f21e635ec7c1761,SPY,buy,market,fill,1,day,0.0,1,stock,412.2200012207031,236.0,0.0
+2023-05-15 10:00:00-04:00,MLTrader,86f34f680373419bae9f881e4eb38fa4,SPY,buy,market,fill,1,gtc,0.0,1,stock,412.2200012207031,474.0,0.0

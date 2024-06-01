@@ -22,18 +22,26 @@ from lumibot.strategies.strategy import Strategy
 from lumibot.traders import Trader
 from alpaca_trade_api import REST 
 from timedelta import Timedelta
+import time
 
 def fetch_stock_data(api_key, ticker, start_date, end_date, timeframe):
-    url = f"https://api.polygon.io/v2/aggs/ticker/{ticker}/range/{timeframe}/{start_date}/{end_date}"
-    params = {
-        'apiKey': api_key
-    }
-    response = requests.get(url, params=params) 
+    date_range = [('2023-06-08', '2024-09-08')]#, ('2023-03-09', '2023-05-08'), ('2023-05-09', '2023-7-08'), ('2023-7-09', '2023-9-08'), ('2023-9-09', '2023-11-08')
+    for (start_date, end_date) in date_range:
+        url = f"https://api.polygon.io/v2/aggs/ticker/{ticker}/range/{timeframe}/{start_date}/{end_date}?adjusted=true&sort=asc&limit=50000"
 
-    if response.status_code == 200:
-        return response.json()
+        params = {
+            'apiKey': api_key
+        }
+        try:
+            response['results'] = response['results'] + requests.get(url, params=params).json()['results']
+        except:
+            response = requests.get(url, params=params).json()
+        # time.sleep(20)
+
+    if requests.get(url, params=params).status_code == 200:
+        return response
     else:
-        print(f"Error: {response.status_code}")
+        print(f"Error: {requests.get(url, params=params).status_code}")
         return None
 
 def plot_graph(data):
@@ -44,10 +52,10 @@ def plot_graph(data):
 
 # Parameters
 api_key = 'B6aVjCLff5E3KTflUXWVlD7sV3W128hd'
-ticker = 'AAPL'
-start_date = '2020-01-09'
-end_date = '2023-12-10'
-timeframe = '1/day'
+ticker = 'SPY'
+start_date = '2023-06-08'
+end_date = '2023-08-08'
+timeframe = '30/minute'
 # Fetch data
 
 def analyse(list):
@@ -394,42 +402,62 @@ def analyse(list):
     return TechIndicator
 
 def get_AI():
-    os.chdir('./finished_files/input/Data/Stocks')
+    os.chdir('./finished_files/input/ETFs')
     list = os.listdir()
     number_files = len(list)
 
     #filenames = [x for x in os.listdir("./Stocks/") if x.endswith('.txt') and os.path.getsize(x) > 0]
     filenames = random.sample([x for x in os.listdir() if x.endswith('.txt') 
-                            and os.path.getsize(os.path.join('',x)) > 0], 20)
+                            and os.path.getsize(os.path.join('',x)) > 0], 8)
 
     data = []
-    for filename in filenames:
-        df = pd.read_csv(os.path.join('',filename), sep=',')
-        label, _, _ = filename.split(sep='.')
-        df['Label'] = label
-        df['Date'] = pd.to_datetime(df['Date'])
+    # for filename in filenames:
+    filename = 'spy.us.txt'
+    df = pd.read_csv(os.path.join('',filename), sep=',')
+    label, _, _ = filename.split(sep='.')
+    df['Label'] = label
+    df['Date'] = pd.to_datetime(df['Date'])
 
-        data.append(df)
+    data.append(df)
 
     TechIndicator = analyse(data)
 
 
     def get_data(stock):
         y = []
-        stock['ANSWER'] = pd.Series(index=stock.index)
-        extra_columns = ['KAMA', 'OpenInt', 'RSI_14D', 'Volume_plain', 'BB_Middle_Band', 'BB_Upper_Band', 'BB_Lower_Band', 'Aroon_Oscillator', 'PVT', 'AB_Middle_Band', 'AB_Upper_Band', 'AB_Lower_Band', 'STOK', 'STOD', 'Chaikin_MF', 'psar', 'ROC', 'VWAP', 'Momentum', 'CCI', 'OBV', 'Kelch_Upper', 'Kelch_Middle', 'Kelch_Down', 'TEMA', 'NATR', 'plusDI', 'minusDI', 'ADX', 'MACD', 'Money_Flow_Index', 'turning_line', 'standard_line', 'ichimoku_span1', 'ichimoku_span2', 'chikou_span', 'WillR', 'MIN_Volume', 'MAX_Volume']
-        x = stock.drop(columns=['Date', 'Label', 'ANSWER']).iloc[:-10]
-        # x = stock['Close'].iloc[:-10]
-        for row in range(len(stock) - 10):
-            condition = 0
-            if stock['Close'][row] < stock['Close'][row + 1]:
-                condition = 1
-                stock.at[row, 'ANSWER'] = 1
-            elif stock['Close'][row] > stock['Close'][row + 1]:
-                condition = 2
-                stock.at[row, 'ANSWER'] = 2
+        extra_columns = ['RSI_14D', 'Volume_plain', 'Aroon_Oscillator', 'VWAP', 'Momentum', 'OBV', 'MACD']
+        x = stock.drop(columns=['Date', 'Label', 'KAMA', 'OpenInt','BB_Middle_Band', 'BB_Upper_Band', 'BB_Lower_Band', 'AB_Upper_Band', 'AB_Lower_Band', 'Kelch_Upper', 'Kelch_Middle', 'Kelch_Down', 'TEMA', 'NATR', 'plusDI', 'minusDI', 'ADX', 'MIN_Volume', 'MAX_Volume', 'ichimoku_span1', 'ichimoku_span2', 'chikou_span', 'WillR', 'CCI','PVT', 'AB_Middle_Band', 'STOK', 'STOD', 'psar', 'ROC', 'Money_Flow_Index', 'turning_line', 'standard_line']).iloc[:-2*48]
 
-            y.append(condition)
+        thresholds = [-0.4, -0.32, -0.24, -0.16, -0.08, 0, 0.08, 0.16, 0.24, 0.32, 0.4]
+        last_percentage_change = 0
+        for row in range(len(stock) - 2*48):
+            for i in range(2*48):
+                percentage_change = (stock['Close'][row + i] - stock['Close'][row]) / stock['Close'][row]
+                if abs(last_percentage_change) < abs(percentage_change):
+                    last_percentage_change = percentage_change
+            if last_percentage_change <= thresholds[0]:
+                class_label = 10
+            elif last_percentage_change <= thresholds[1]:
+                class_label = 9
+            elif last_percentage_change <= thresholds[2]:
+                class_label = 8
+            elif last_percentage_change <= thresholds[3]:
+                class_label = 7
+            elif last_percentage_change <= thresholds[4]:
+                class_label = 4
+            elif last_percentage_change <= thresholds[5]:
+                class_label = 5
+            elif last_percentage_change <= thresholds[6]:
+                class_label = 4
+            elif last_percentage_change <= thresholds[7]:
+                class_label = 3
+            elif last_percentage_change <= thresholds[8]:
+                class_label = 2
+            else:
+                class_label = 1
+
+            y.append(class_label)
+
         y = pd.Series(y, name='Label')
         return x, y
 
@@ -447,26 +475,14 @@ def get_AI():
         all_y = pd.concat(all_y, ignore_index=True)
         columns = [column for column in all_x.columns]
         
-        
-
-        tscv = TimeSeriesSplit(n_splits=5)
         model = DecisionTreeClassifier()
-
-        # Use cross-validation to check for overfitting
-        cv_scores = cross_val_score(model, all_x, all_y, cv=tscv)
-        print(f"Cross-validation scores: {cv_scores}")
-        print(f"Mean CV score: {cv_scores.mean()}")
-
-        for train_index, test_index in tscv.split(all_x):
-            # print('test', train_index, test_index)
-            x_train, x_test = all_x.iloc[train_index], all_x.iloc[test_index]
-            y_train, y_test = all_y.iloc[train_index], all_y.iloc[test_index]
-            model.fit(x_train, y_train)
-            predictions = model.predict(x_test)
-            score = accuracy_score(y_test, predictions)
-            cm = confusion_matrix(y_test, predictions)
-            print(f"Test accuracy score: {score}")
-            print(f"Confusion Matrix:\n{cm}")
+        x_train, x_test, y_train, y_test = train_test_split(all_x, all_y)
+        model.fit(x_train, y_train)
+        predictions = model.predict(x_test)
+        score = accuracy_score(y_test, predictions)
+        cm = confusion_matrix(y_test, predictions)
+        print(f"Test accuracy score: {score}")
+        print(f"Confusion Matrix:\n{cm}")
         
             # for i in range(len(x_test) - 1):
             #     pred = model.predict(x_test.iloc[i:i+1])
@@ -514,12 +530,14 @@ ALPACA_CREDS = {
     "PAPER": True
 }
 data = fetch_stock_data(api_key, ticker, start_date, end_date, timeframe)
+df = handle_data(data)
 
 class MLTrader(Strategy): 
     def initialize(self, ticker:str="SPY", cash_at_risk:float=.5): 
         self.ticker = ticker
-        self.sleeptime = "24H" 
+        self.sleeptime = "30M" 
         self.last_trade = None 
+        self.last_order = None
         self.cash_at_risk = cash_at_risk
         self.api = REST(base_url=BASE_URL, key_id=API_KEY, secret_key=API_SECRET)
 
@@ -530,59 +548,69 @@ class MLTrader(Strategy):
         return cash, last_price, quantity
 
     def get_sentiment(self):
-        df = handle_data(data)
+        # print(df['Date'])
         condition = 'neutral'
-        today = self.get_datetime()
-        # print("gayy", today, df['Date'])
-        # Filter the DataFrame to select the row with today's date
-        today_row = df[df['Date'].dt.date == today.date()]
-        # print(df)
-        if today_row is not None or []:
-            # Get the prediction for today's data
-            pred = trading_bot.predict(today_row.drop(columns=['Date', 'Label']))
-            print(f"For {today}: Prediction: {pred}")
-            if pred[0] == 1:
-                condition = "positive"
-            elif pred[0] == 2:
-                condition = "negative" 
+        today = self.get_datetime().strftime('%Y-%m-%d %H:%M:%S')
+        if int(today[11:13]) > 9:
+            today_row = df[df['Date'] == today]
+            if today_row is not None:
+                # Get the prediction for today's data
+                probability = trading_bot.predict(today_row.drop(columns=['Date', 'Label', 'KAMA', 'OpenInt','BB_Middle_Band', 'BB_Upper_Band', 'BB_Lower_Band', 'AB_Upper_Band', 'AB_Lower_Band', 'Kelch_Upper', 'Kelch_Middle', 'Kelch_Down', 'TEMA', 'NATR', 'plusDI', 'minusDI', 'ADX', 'MIN_Volume', 'MAX_Volume', 'ichimoku_span1', 'ichimoku_span2', 'chikou_span', 'WillR', 'CCI','PVT', 'AB_Middle_Band', 'STOK', 'STOD', 'psar', 'ROC', 'Money_Flow_Index', 'turning_line', 'standard_line']))
+                print(f"For {today}: Prediction: {probability}")
+                if probability >= 10:
+                    condition = "positive"
+                elif probability <= 1:
+                    condition = "negative" 
         else:
             print("Gay") 
         return condition
+    
+    def runnit(self, cash, last_price, quantity):
+        sentiment = self.get_sentiment()
+        if cash > last_price:
+            if sentiment == "positive":
+                order = self.create_order(
+                    self.ticker, 
+                    quantity, 
+                    "buy", 
+                    type="bracket", 
+                    take_profit_price=last_price*1.02, 
+                    stop_loss_price=last_price*.99
+                )
+                self.submit_order(order)
+                self.last_order = order
+                self.last_trade = "buy"
+            elif sentiment == "negative":
+                order = self.create_order(
+                    self.ticker, 
+                    quantity, 
+                    "sell", 
+                    type="bracket", 
+                    take_profit_price=last_price*.98, 
+                    stop_loss_price=last_price*1.01
+                )
+                self.submit_order(order)
+                self.last_order = order
+                self.last_trade = "sell"
 
     def on_trading_iteration(self):
         cash, last_price, quantity = self.position_sizing() 
-        sentiment = self.get_sentiment()
-        if cash > last_price:
-            
-            if sentiment == "positive":
-                if self.last_trade == "sell" or self.last_trade == None: 
-                    self.sell_all() 
-                    order = self.create_order(
-                        self.ticker, 
-                        quantity, 
-                        "buy", 
-                        type="bracket", 
-                        take_profit_price=last_price*1.20, 
-                        stop_loss_price=last_price*.95
-                    )
-                    self.submit_order(order) 
-                    self.last_trade = "buy"
-            elif sentiment == "negative":
-                if self.last_trade == "buy" or self.last_trade == None: 
-                    self.sell_all() 
-                    order = self.create_order(
-                        self.ticker, 
-                        quantity, 
-                        "sell", 
-                        type="bracket", 
-                        take_profit_price=last_price*.8, 
-                        stop_loss_price=last_price*1.05
-                    )
-                    self.submit_order(order) 
-                    self.last_trade = "sell"
 
-start_date = datetime(2023,4,9)
-end_date = datetime(2023,12,9) 
+        if self.last_order:
+            if self.last_order.side == "buy":
+                if self.last_order.stop_loss_price > last_price or self.last_order.take_profit_price < last_price:
+                    self.last_order = None
+                    self.runnit(cash, last_price, quantity)
+            elif self.last_order.side == "sell":
+                if self.last_order.stop_loss_price < last_price or self.last_order.take_profit_price > last_price:
+                    self.last_order = None
+                    self.runnit(cash, last_price, quantity)
+        elif self.last_order is None:
+            self.runnit(cash, last_price, quantity)
+
+            
+start_date = datetime(2023,7,1,11) 
+end_date = datetime(2023,9,7,7) 
 broker = Alpaca(ALPACA_CREDS) 
 strategy = MLTrader(name='mlstrat', broker=broker, 
                     parameters={"ticker":ticker, 

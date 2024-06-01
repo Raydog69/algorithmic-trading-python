@@ -1,0 +1,9 @@
+time,strategy,identifier,symbol,side,type,status,multiplier,time_in_force,asset.strike,asset.multiplier,asset.asset_type,price,filled_quantity,trade_cost
+2023-02-13 10:00:00-05:00,MLTrader,1a14ac067cd94dd88e523be949fb06cf,BTC,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-02-13 10:00:00-05:00,MLTrader,1a14ac067cd94dd88e523be949fb06cf,BTC,buy,market,fill,1,gtc,0.0,1,stock,91.1458969116211,1097.0,0.0
+2023-03-01 08:30:00-05:00,MLTrader,5b893beca3e74b91be0429d730ea2394,BTC,sell,limit,canceled,1,day,0.0,1,stock,,,
+2023-03-01 08:30:00-05:00,MLTrader,4823e4fa56344a1996dbf0ef2984554f,BTC,sell,stop,fill,1,day,0.0,1,stock,90.1500015258789,1097.0,0.0
+2023-03-01 10:00:00-05:00,MLTrader,7f1c7a073e8e43baaf827a3e69ef7432,BTC,buy,market,new,1,gtc,0.0,1,stock,,,
+2023-03-01 10:00:00-05:00,MLTrader,7f1c7a073e8e43baaf827a3e69ef7432,BTC,buy,market,fill,1,gtc,0.0,1,stock,90.1500015258789,1097.0,0.0
+2023-04-04 08:30:00-04:00,MLTrader,dec7b75fa42a450e8e65261264272a56,BTC,sell,stop,canceled,1,day,0.0,1,stock,,,
+2023-04-04 08:30:00-04:00,MLTrader,900d0d80aeda4cf18148e888eac075b0,BTC,sell,limit,fill,1,day,0.0,1,stock,93.01969909667969,1097.0,0.0
